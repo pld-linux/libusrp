@@ -90,7 +90,7 @@ echo '%{version}' > .tarball-version
 	%{?with_static_libs:--enable-static}
 # swig based --enable-guile and --enable-python are broken
 
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
