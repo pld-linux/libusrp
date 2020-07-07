@@ -5,13 +5,13 @@
 Summary:	USRP client side C++ interface
 Summary(pl.UTF-8):	Interfejs C++ strony klienckiej USRP
 Name:		libusrp
-Version:	3.4.2
+Version:	3.4.5
 Release:	1
 License:	GPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/osmocom/libusrp/releases
 Source0:	https://github.com/osmocom/libusrp/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b17d316d3ae7ba989e77df24a74d677a
+# Source0-md5:	a3b389b83712a9d7b47772674ac8e761
 URL:		http://git.osmocom.org/libusrp/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.11
@@ -113,8 +113,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %attr(755,root,root) %{_bindir}/usrp_cal_dc_offset
 %attr(755,root,root) %{_bindir}/usrper
-%attr(755,root,root) %{_libdir}/libusrp-%{version}.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libusrp-%{version}.so.0
+%attr(755,root,root) %{_libdir}/libusrp.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libusrp.so.1
 %{_datadir}/usrp
 
 %files devel
