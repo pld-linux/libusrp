@@ -65,9 +65,7 @@ Statyczna biblioteka USRP.
 Summary:	API documentation for USRP library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki USRP
 Group:		Documentation
-%if "%{_rpmversion}" >= "4.6"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for USRP library.
