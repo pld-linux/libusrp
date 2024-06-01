@@ -5,26 +5,28 @@
 Summary:	USRP client side C++ interface
 Summary(pl.UTF-8):	Interfejs C++ strony klienckiej USRP
 Name:		libusrp
-Version:	3.4.5
-Release:	2
+Version:	3.4.8
+Release:	1
 License:	GPL v3+
 Group:		Libraries
-#Source0Download: https://github.com/osmocom/libusrp/releases
+#Source0Download: https://github.com/osmocom/libusrp/tags
 Source0:	https://github.com/osmocom/libusrp/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	a3b389b83712a9d7b47772674ac8e761
+# Source0-md5:	7a3934d363785edba63111003ab172a1
 URL:		http://git.osmocom.org/libusrp/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	boost-devel >= 1.37
 BuildRequires:	doxygen
+BuildRequires:	gcc >= 6:4.7
 BuildRequires:	guile-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:2
 BuildRequires:	libusb-devel >= 1.0
 BuildRequires:	pkgconfig
-BuildRequires:	python-devel
+BuildRequires:	python3-devel >= 1:3.2
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	sdcc >= 3.2.0
-BuildRequires:	swig-python
+BuildRequires:	swig-python >= 2
 BuildRequires:	xmlto
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
